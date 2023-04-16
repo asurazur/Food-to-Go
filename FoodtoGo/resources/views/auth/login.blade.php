@@ -59,7 +59,7 @@
                         
                         <div class="row mb-0">
                             <div class="col-md-12 offset-md-0">
-                                <button type="submit" class="btn btn-primary" style="width: 385px; color: ">
+                                <button type="submit" class="btn btn-primary btn-red" style="width: 385px; color: ">
                                     {{ __('Sign In') }}
                                 </button>
                             </div>
@@ -70,10 +70,13 @@
         </div>
     </div>
 </div>
-@endsection
 <div class="container">
     <div class="row justify-content-right">
-        <div class="card">
+    <div class="col-md-4">
+            <div class="card row-mb-4">
+            <div class="card-body">
+            <img src="{{ asset('img/adnu.jpg') }}">
 </div>
 </div>
 </div>
+@endsection

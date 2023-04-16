@@ -24,11 +24,11 @@
     <body class="antialiased">
         <nav class="navbar navbar-expand-lg bg-body">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="icon.png">Food To Go</a>
+    <a class="navbar-brand" href="#"><img src="{{ asset('img/icon.png') }}" height="40px">Food To Go</a>
       <form class="d-flex" role="search">
-        <button class="btn" type="submit"><img src="search.jpg"></button>
+        <button class="btn" type="submit"><img src="{{ asset('img/search.png') }}" height="40px"></button>
         @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                <div class="fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
                     @else
