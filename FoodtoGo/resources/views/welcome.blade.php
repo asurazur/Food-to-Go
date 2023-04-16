@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Food To Go</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -24,9 +24,9 @@
     <body class="antialiased">
         <nav class="navbar navbar-expand-lg bg-body">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="../img/icon.png">Food To Go</a>
+    <a class="navbar-brand" href="#"><img src="icon.png">Food To Go</a>
       <form class="d-flex" role="search">
-        <button class="btn" type="submit">Search</button>
+        <button class="btn" type="submit"><img src="search.jpg"></button>
         @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
