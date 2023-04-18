@@ -58,25 +58,21 @@
                         </div>
                         
                         <div class="row mb-0">
-                            <div class="col-md-12 offset-md-0">
-                                <button type="submit" class="btn btn-primary btn-red" style="width: 385px; color: ">
-                                    {{ __('Sign In') }}
-                                </button>
+                             <div class="col-md-12 offset-md-0">
+                                 <button type="submit" class="btn btn-primary btn-red" style="width: 385px; color: ">
+                                      {{ __('Sign In') }}
+                                 </button>
+                                </div>
+                                 <div class="col-12 mt-3">
+                                    <p class="text-center"><span style="color: gray;">Don’t have an account?</span> <a class="nav-link d-inline" href="{{ route('register') }}" style="color: #C43F52">{{ __('Sign up') }}</a></p>   
+                                </div>
                             </div>
                         </div>
                     </form>
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row justify-content-right">
-    <div class="col-md-4">
-            <div class="card row-mb-4">
-            <div class="card-body">
-            <img src="{{ asset('img/adnu.jpg') }}">
-</div>
-</div>
-</div>
+<img src="{{ asset('img/adnu.jpg') }}" style="height: 800px; position: fixed; right: -300px; top: -50px; pointer-events: none ">
 @endsection
