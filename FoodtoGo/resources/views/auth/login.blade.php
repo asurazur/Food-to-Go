@@ -4,7 +4,7 @@
     <div class="row justify-content-left">
         <div class="col-md-4">
             <div class="card row-mb-4">
-            <div class="card-body">
+            <div class="login card-body">
                 <div class="card-title mb-4"><h2 class="fw-bold">{{ __('Sign In') }}</div>
 
                     <form method="POST" action="{{ route('login') }}">
