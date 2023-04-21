@@ -23,21 +23,24 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar">
+        <nav class="navbar navbar" style="background-color: #C43F52; height:70px;">
             <div class="container">
                 <a class="brand navbar-brand" href="{{ url('/') }}">
-                <img src="{{ asset('img/icon.png') }}" height="40px"><span style="color: #C43F52;">Food to Go</span>
+                <img src="{{ asset('img/icon white.png') }}" height="40px"><span style="color: White;">Food to Go</span>
                 </a>
-                
+                <a class="navbar-brand" href="{{ url('/') }}">
+        <span style="color: White;"> Canteens </span>
+    </a>
                
                 <nav class="navbar navbar-expand">
  <!-- Left Side Of Navbar -->
 <ul class="navbar-nav me-auto">
-    <a class="navbar-brand" href="{{ url('/') }}">
-        <span style="color: #C43F52;"> Canteens </span>
-    </a>
+    
     <a class="navbar-brand" href="{{ url('/') }}">
         <img src="{{ asset('img/search.png') }}" height="40px">
+    </a>
+    <a class="navbar-brand" href="{{ url('/') }}">
+        <img src="{{ asset('img/cart.png') }}" height="40px">
     </a>
 </ul>
 
@@ -47,13 +50,7 @@
     @guest
         @if (Route::has('login'))
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-            </li>
-        @endif
-
-        @if (Route::has('register'))
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="nav-link" href="{{ route('login') }}"><span style="color: white;">{{ __('Login') }}</span></a>
             </li>
         @endif
     @else
