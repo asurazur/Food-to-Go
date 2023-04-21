@@ -4,8 +4,8 @@
     <div class="row">
         <div class="col-md-5">
             <div class="card row-mb-4">
-                <div class="login card-body">
-                    <div class="card-title mb-4">
+                <div class="login card-body" style="position: fixed; top: 30vh; border-style: solid; border-radius: 100px; width: 40%; border-color:#C43F52; ">
+                    <div class="card-title mb-5 offset-md-2">
                         <h2 class="fw-bold">{{ __('Sign In') }}</h2>
                     </div>
 
