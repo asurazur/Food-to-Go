@@ -32,7 +32,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
         <span style="color: White;"> Home </span>
     </a>
-                <a class="navbar-brand" href="{{ url('/menu') }}">
+                <a class="navbar-brand" href="{{ url('/canteen') }}">
         <span style="color: White;"> Canteens </span>
     </a>
     <a class="navbar-brand" href="{{ url('/') }}">
