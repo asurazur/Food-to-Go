@@ -43,7 +43,7 @@
  <!-- Left Side Of Navbar -->
 <ul class="navbar-nav me-auto">
     
-    <a class="navbar-brand" href="{{ url('/') }}">
+    <a class="navbar-brand" href="{{ url('favorites') }}">
         <img src="{{ asset('img/heart.png') }}" height="40px">
     </a>
     <div class="vr"></div>

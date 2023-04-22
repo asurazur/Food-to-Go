@@ -25,4 +25,15 @@ class HomeController extends Controller
     {
         return view('/');
     }
+    public function favorites()
+{
+    // get list of favorite items
+    $favorites = [
+        ['name' => 'Spaghetti', 'price' => 70.00],
+        ['name' => 'Turon', 'price' => 30.00],
+        // add more items as needed
+    ];
+
+    return view('favorites', compact('favorites'));
+}
 }
