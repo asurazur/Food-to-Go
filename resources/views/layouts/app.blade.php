@@ -29,17 +29,23 @@
                 <img src="{{ asset('img/icon white.png') }}" height="40px"><span style="color: White;">Food to Go</span>
                 </a>
                 <a class="navbar-brand" href="{{ url('/') }}">
+        <span style="color: White;"> Home </span>
+    </a>
+                <a class="navbar-brand" href="{{ url('/') }}">
         <span style="color: White;"> Canteens </span>
     </a>
+    <a class="navbar-brand" href="{{ url('/') }}">
+        <span style="color: White;"> Contacts </span>
+    </a>
                
-                <nav class="navbar navbar-expand">
+        <nav class="navbar navbar-expand">
  <!-- Left Side Of Navbar -->
 <ul class="navbar-nav me-auto">
     
     <a class="navbar-brand" href="{{ url('/') }}">
-        <img src="{{ asset('img/search.png') }}" height="40px">
+        <img src="{{ asset('img/heart.png') }}" height="40px">
     </a>
-    <a class="navbar-brand" href="{{ url('/') }}">
+    <a class="navbar-brand" href="{{ url('/shop') }}">
         <img src="{{ asset('img/cart.png') }}" height="40px">
     </a>
 </ul>
