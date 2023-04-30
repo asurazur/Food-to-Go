@@ -46,7 +46,7 @@ a > span, a{
 
 #scrollbar {
     overflow-y: scroll;
-    max-height: 30px;
+    max-height: auto;
   }
   
   ::-webkit-scrollbar { 
@@ -59,7 +59,7 @@ a > span, a{
   }
   
   ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #C43F52;
   }
   .p:hover {
