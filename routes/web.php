@@ -27,3 +27,5 @@ Route::view('/canteen', 'canteen');
 Route::get('/menu', function () { return view('menu');});
 Route::get('/menu2', function () { return view('menu2');});
 Route::get('/menu3', function () { return view('menu3');});
+Route::get('/menu4', function () { return view('menu4');});
+Route::get('/menu5', function () { return view('menu5');});

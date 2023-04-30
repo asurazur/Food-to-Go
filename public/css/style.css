@@ -99,14 +99,15 @@ a > span, a{
      height: 60px;
   }
  
-.drink{
-    margin: auto;   
-    margin-right: 267px;
-}
+
 .meal{
-    margin: auto;
-    margin-left: 273px;
+
+    margin-left: 247px;
 }
 .loc{
     margin-top: -30px;
+}
+.carousel{
+    width: 60%;
+    height: 60%;
 }
