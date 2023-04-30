@@ -20,10 +20,10 @@
                            <a href="{{ url('/menu') }}"> <img src="{{ asset('img/JBI.png') }}" height="200vt" width="200vt" ></a>
                         </div>
                         <div class="card" style="border-radius: 10px; background-color: #FED700;">
-                            <img src="{{ asset('img/Cocina.png') }}"height="200vt" width="200vt" > 
+                        <a href="{{ url('/menu2') }}"><img src="{{ asset('img/Cocina.png') }}"height="200vt" width="200vt" > </a>
                         </div>
                         <div class="card" style="border-radius: 10px; background-color: #222222;">
-                            <img src="{{ asset('img/RC.png') }}" height="200vt" width="200vt">    
+                        <a href="{{ url('/menu3') }}"> <img src="{{ asset('img/RC.png') }}" height="200vt" width="200vt"> </a>
                         </div>
                     </div>
                 </div>
