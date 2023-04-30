@@ -44,14 +44,14 @@
                 <div class="popular card-body">
                 <p class="pp my-2">Food 5</p>
             </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+    </div>
         <div class="row py-3">
-        <div class="meal col-md-5 ">
+        <div class="meal col-md-5">
         <div class="card" style="overflow-y: scroll; background-color: rgba(255, 255, 255, 0.5); border-color: #C43F52; border-radius: 15px; border: 3px solid #C43F52; height: 280px;">
         <div class="card-body" >
           <h3 class="card-title"><span style="font-family: 'Lexend'; font-style: normal; font-size: 30px; line-height: 56px; text-align: center; color: #000000; mix-blend-mode: normal;">MEAL</h3>
@@ -119,11 +119,11 @@
                   </div>
                 </div>
               </div>
-    </div>
-    </div>
+            </div>
+        </div>
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="drink col-md-3">
         <div class="card" style="overflow-y: scroll; background-color: rgba(255, 255, 255, 0.5); border-color: #C43F52; border-radius: 15px; border: 3px solid #C43F52; height: 280px; width: 104%">
         <div class="card-body" >
           <h3 class="card-title"><span style="font-family: 'Lexend'; font-style: normal; font-size: 30px; line-height: 56px; text-align: center; color: #000000; mix-blend-mode: normal;">Drinks</h3>
@@ -156,9 +156,9 @@
                   </div>
                 </div>
               </div>
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
   </div>
 </div>
 <div class="container-fluid py-4">

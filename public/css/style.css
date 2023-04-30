@@ -46,10 +46,11 @@ a > span, a{
 
 #scrollbar {
     overflow-y: scroll;
+    max-height: 30px;
   }
   
-  ::-webkit-scrollbar {
-    width: 4px;
+  ::-webkit-scrollbar { 
+    width: 5px;
   }
   
   ::-webkit-scrollbar-track {
@@ -98,8 +99,13 @@ a > span, a{
      height: 60px;
   }
  
+.drink{
+    margin: auto;   
+    margin-right: 267px;
+}
 .meal{
-    margin-left: 250px;
+    margin: auto;
+    margin-left: 273px;
 }
 .loc{
     margin-top: -30px;
