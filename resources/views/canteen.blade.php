@@ -17,7 +17,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active d-flex align-items-center">
                         <div class="card" style="border-radius: 10px; background-color: #DED5C6;">
-                            <img src="{{ asset('img/JBI.png') }}" height="200vt" width="200vt" >
+                           <a href="{{ url('/menu') }}"> <img src="{{ asset('img/JBI.png') }}" height="200vt" width="200vt" ></a>
                         </div>
                         <div class="card" style="border-radius: 10px; background-color: #FED700;">
                             <img src="{{ asset('img/Cocina.png') }}"height="200vt" width="200vt" > 

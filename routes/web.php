@@ -24,3 +24,4 @@ Route::get('/shop', function () { return view('shop');});
 Route::view('/menu', 'layouts.menu');
 Route::get('/favorites', function () { return view('favorites');});
 Route::view('/canteen', 'canteen');
+Route::view('/menu', 'menu');

@@ -27,3 +27,18 @@ function food(foodName, pricePerUnit, quantityInputId, minusBtnId, plusBtnId, to
         totalPrice.innerText = price.toFixed(2);
     });
 }
+
+
+$(document).ready(function() {
+    $('.scrollable').on('mousewheel', function(event) {
+      if (event.deltaY > 0) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.scrollLeft -= (event.deltaY * 30);
+      } else {
+        event.preventDefault();
+        event.stopPropagation();
+        this.scrollLeft += (event.deltaY * -30);
+      }
+    });
+  });
