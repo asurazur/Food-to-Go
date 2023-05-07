@@ -15,7 +15,17 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        //gets the id of the authenticated user
+        
+        $admin = false;
+        // get all the products
+        $products = Product::all();
+        // if there is an authenticated user, check if admin
+        // if yes, get only the products with his id
+       
+        
+        //pass the data to the view
+        return view('menu', ['products' => $products, 'admin' => $admin]);
     }
 
     /**

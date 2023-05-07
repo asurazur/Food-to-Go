@@ -98,9 +98,7 @@ class MigrationCreator
             }
         }
 
-        if (class_exists($className = $this->getClassName($name))) {
-            throw new InvalidArgumentException("A {$className} class already exists.");
-        }
+        
     }
 
     /**

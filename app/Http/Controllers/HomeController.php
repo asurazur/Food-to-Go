@@ -23,7 +23,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('/');
+        
+        // get all the products
+        $products = Product::all();
+
+
+        //pass the data to th view
+        return view('home', ['products' => $products],);
+        
     }
 
 }

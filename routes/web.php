@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +25,9 @@ Route::get('/shop', function () { return view('shop');});
 Route::view('/menu', 'layouts.menu');
 Route::get('/favorites', function () { return view('favorites');});
 Route::view('/canteen', 'canteen');
-Route::get('/menu', function () { return view('menu');});
+
 Route::get('/menu2', function () { return view('menu2');});
 Route::get('/menu3', function () { return view('menu3');});
 Route::get('/menu4', function () { return view('menu4');});
 Route::get('/menu5', function () { return view('menu5');});
+Route::get('/menu', [ProductController::class, 'index'])->name('menu');
