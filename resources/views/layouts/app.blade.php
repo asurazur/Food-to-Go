@@ -44,7 +44,7 @@
                             <span> Canteens </span>
                         </a>    
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            <span> Contacts </span>
+                            <span> About Us </span>
                         </a>         
                     </ul>
 

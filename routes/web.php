@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\cart;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,11 +22,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/shop', function () { return view('shop');});
+Route::get('/shop', [cart::class, 'index'])->name('shop');
 Route::view('/menu', 'layouts.menu');
 Route::get('/favorites', function () { return view('favorites');});
 Route::view('/canteen', 'canteen');
-
 Route::get('/menu2', function () { return view('menu2');});
 Route::get('/menu3', function () { return view('menu3');});
 Route::get('/menu4', function () { return view('menu4');});

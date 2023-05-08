@@ -17,9 +17,16 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->unsignedBigInteger("user_id");
             $table->string("product_name");
+            $table->string("product_type");
+            $table->string('product_description');
+            $table->string('product_image');
+            $table->float('product_rating')->default(0.0);
+            $table->integer('rating_sum')->default(0);
+            $table->integer('rating_count')->default(0);
             $table->float("price");
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
+            
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
