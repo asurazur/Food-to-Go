@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\cart;
+use App\Http\Controllers\Canteen;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::get('/shop', [cart::class, 'index'])->name('shop');
 Route::view('/menu', 'layouts.menu');
 Route::get('/favorites', function () { return view('favorites');});
 Route::view('/canteen', 'canteen');
+Route::view('/About', 'About');
 Route::get('/menu2', function () { return view('menu2');});
 Route::get('/menu3', function () { return view('menu3');});
 Route::get('/menu4', function () { return view('menu4');});

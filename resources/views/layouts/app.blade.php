@@ -43,7 +43,7 @@
                         <a class="navbar-brand" href="{{ url('/canteen') }}">
                             <span> Canteens </span>
                         </a>    
-                        <a class="navbar-brand" href="{{ url('/') }}">
+                        <a class="navbar-brand" href="{{ url('/About') }}">
                             <span> About Us </span>
                         </a>         
                     </ul>

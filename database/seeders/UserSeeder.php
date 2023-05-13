@@ -24,8 +24,19 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now(),
             'password' => Hash::make('password'),
             'remember_token' => Str::random(10),
-            
+           
         ]);
-
+        User::create([
+            'name'=>'Food To Go',
+            'email' => 'foodtogo@gmail.com',
+            'password' => Hash::make('password'),
+          
+        ]);
+        User::create([
+        'name'=>'Cocina',
+            'email' => 'cocina@gmail.com',
+            'password' => Hash::make('password'),
+           
+        ]);
     }
 }
