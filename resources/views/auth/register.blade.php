@@ -68,7 +68,7 @@
                                 </button></a>
                             </div>
                         </div>
-                        <p class="text-center py-4">Already have an account? <a href="{{ url('/login') }}" style="color: #C43F52;">Login</a></p>
+                        <p class="text-center py-4"><span style="color: gray;">Already have an account? </span><a class="nav-link d-inline fw-bold" href="{{ url('/login') }}" style="color: #C43F52;">Login</a></p>
                     </form>
                 </div>
             </div>
