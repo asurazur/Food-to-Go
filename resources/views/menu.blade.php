@@ -22,30 +22,4 @@
     </div>
   </div>
 </div>
-
-<script>
-  let cart = [];
-
-  function addToCart(product) {
-    cart.push(product);
-    updateCart();
-  }
-
-  function removeFromCart(product) {
-    let index = cart.findIndex(p => p.id === product.id);
-    if (index >= 0) {
-      cart.splice(index, 1);
-      updateCart();
-    }
-  }
-
-  function updateCart() {
-    let total = 0;
-    for (let product of cart) {
-      total += parseFloat(product.price);
-    }
-    document.getElementById('cart-price').textContent = total.toFixed(2);
-  }
-</script>
-
 @endsection
