@@ -46,7 +46,7 @@
      </div>
     </div>
  
-    <div class="row py-3 justify-content-center align-items-center">
+    <div class="row gx-2 py-3 justify-content-center align-items-center">
   <div class="col-md-5">
     <div class="card" style="overflow-y: scroll; background-color: rgba(255, 255, 255, 0.5); border-color: #C43F52; border-radius: 15px; border: 3px solid #C43F52; height: 280px;">
       <div class="card-body">
@@ -54,7 +54,7 @@
         <div class="row justify">
           @foreach($products as $product)
             @if($product['product_type'] == 'Meal')
-              <div class="col-md-4">
+              <div class="col-md-4 gx-2">
                 <div class="card" style="background-color: white;">
                   <div class="menu card-body">
                     <p class="p my-3">{{$product['product_name']}}</p>
