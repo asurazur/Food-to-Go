@@ -1,10 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CanteensController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\cart;
-use App\Http\Controllers\Canteen;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,13 +21,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/shop', [cart::class, 'index'])->name('shop');
+Route::get('/shop', function () { return view('shop');});
 Route::view('/menu', 'layouts.menu');
 Route::get('/favorites', function () { return view('favorites');});
-Route::view('/canteen', 'canteen');
-Route::view('/About', 'About');
+Route::get('/canteen', [CanteensController::class, 'getCanteens']);
+Route::get('/menu', [ProductController::class, 'index'])->name('menu');
 Route::get('/menu2', function () { return view('menu2');});
 Route::get('/menu3', function () { return view('menu3');});
 Route::get('/menu4', function () { return view('menu4');});
 Route::get('/menu5', function () { return view('menu5');});
-Route::get('/menu', [ProductController::class, 'index'])->name('menu');
+Route::view('/About', 'About');

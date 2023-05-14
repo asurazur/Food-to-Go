@@ -27,6 +27,4 @@ abstract class Migration
     {
         return $this->connection;
     }
-
-
 }
