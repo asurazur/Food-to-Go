@@ -2,7 +2,7 @@
 
 @section('content')
 <h1 class ="my-auto" style="font-family: 'Lexend'; font-style: normal; font-weight: 400; font-size: 60px; line-height: 125px; text-align: center; color: #C43F52;">Coko Cafe</h1>
-<p class ="loc pb-3 " style="font-family: 'Lexend'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 31px; text-align: center; color: #6B6B6B;">Location: Madrigal Center </p>
+<p class ="loc pb-3 " style="font-family: 'Lexend'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 31px; text-align: center; color: #6B6B6B;">Location:<a href="{{ url('/map') }}" style="color: #6B6B6B;"> Madrigal Building </a></p>
 <h2 class ="my-auto" style="font-family: 'Lexend'; font-style: normal; font-weight: 400; font-size: 40px; line-height: 75px; text-align: center; color: #000000;">MENU</h2>
 <div class="container-fluid py-6">
   <div class="row">

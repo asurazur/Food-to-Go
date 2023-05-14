@@ -23,6 +23,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/shop', function () { return view('shop');});
 Route::view('/menu', 'layouts.menu');
+Route::view('/map', 'map');
 Route::get('/favorites', function () { return view('favorites');});
 Route::get('/canteen', [CanteensController::class, 'getCanteens']);
 Route::get('/menu', [ProductController::class, 'index'])->name('menu');
