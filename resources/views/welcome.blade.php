@@ -4,7 +4,7 @@
     <div class="row hero">
         <div class="col-6 my-5 p-5 d-flex align-items-center" style="height: 90%;">
             <div class="container-fluid">
-            <h1 class="heading1 text-yellow">Fresh and fast,</h1>
+            <h1 class="heading1 text-yellow">LMAO,</h1>
             <h1 class="heading1">your food to go!</h1>
             <p class="fs-5 col-8 mt-4 mb-5">
             By pre-ordering your meals, you're not only promoting a healthier lifestyle, but also creating a safer environment for your school community. Avoid crowds and enjoy nutritious meals hassle-free!
