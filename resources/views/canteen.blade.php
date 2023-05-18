@@ -16,7 +16,7 @@
                                     @foreach ($canteenChunk as $canteen)
                                         <div class="col-lg-4">
                                         <div style="{{ $canteen->id == 3 ? 'background-color: #222222;' : ($canteen->id == 2 ? 'background-color: #FED700;' : ($canteen->id == 1 ? 'background-color: #DED5C6;' : '')) }}">
-                                            <a href="{{ url('/'.$canteen->url) }}"> <img
+                                            <a href={{route('menu',['id'=>$canteen->id])}}> <img
                                                     src="{{ url('/'.$canteen->gallery) }}" class="d-block w-100" alt=""
                                                     height="225vt"></a>
                                         </div>

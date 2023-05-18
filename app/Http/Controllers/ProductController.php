@@ -33,9 +33,16 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $req)
     {
-        //
+        $product = new Product;
+        $product->product_name = $req->product_name;
+        $product->product_type = $req->product_type;
+        $product->product_description = $req->product_description;
+        $product->product_image = $req->product_image;
+        $product->product_rating = $req->product_rating;
+        $product->price = $req->price;
+        $product->save();
     }
 
     /**
@@ -61,16 +68,7 @@ class ProductController extends Controller
         return view('products.show', ['product' => $product]); // pass the product to the view
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Product $product)
-    {
-        //
-    }
+  
 
     /**
      * Update the specified resource in storage.
@@ -79,9 +77,16 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $req)
     {
-        //
+        $product = Product::find($req->product_id);
+        $product->product_name = $req->product_name;
+        $product->product_type = $req->product_type;
+        $product->product_description = $req->product_description;
+        $product->product_image = $req->product_image;
+        $product->product_rating = $req->product_rating;
+        $product->price = $req->price;
+        $product->save();
     }
 
     /**
@@ -92,6 +97,6 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product = Product::find($req->product_id)->delete();
     }
 }

@@ -20,7 +20,7 @@ class CanteensController extends Controller
         }
 
         $stall = Canteen::all();
-
+        // dd($stall);
         return view('canteen', [
             'canteens' => $stall,
         ]);
